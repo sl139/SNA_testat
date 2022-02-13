@@ -28,18 +28,6 @@ erstellt von Swaran Sandhu (sandhu@hdm-stuttgart.de)
 Bezieht sich auf das Jahr, in dem die Variable relationship beginnt
 
 # NODE-Attribute  
-
--   name_short (Nachname)
--   name (voller Name)
--   type (0 = Person, 1 = Organisation/Ort/Verband etc.),
--   sex (Geschlecht)
--   birth (Geburtsjahr)
--   position (jetzige Position, z.B. Staatssekretär:in, Minister)
--   education (höchster Bildungsabschluss)
--   subject (Fachrichtung bei Studium/Promotion)
--   party (Parteizugehörigkeit)
--   religion (Religion)
--   kids (Anzahl der Kinder)
 -   twitter (Anzahl follower)
 -   instagram (Anzahl follower)
 -   facebook (Anzahl follower)
@@ -52,67 +40,57 @@ Identische ID wie aus der edgelist zur eindeutige Identifikation der Knoten
 kürzere Bezeichnung der Organisation, Beruf oder Nachname
 
 **type**
+0 = Person, 1 = Organisation/Ort/Verband etc.
 
 **sex**    
-Bitte geben Sie ihr Geschlecht an:  
 1 = weiblich  
 2 = männlich  
 3 = divers
   
-**crpr***    
-Welche Studienrichtung haben Sie vertieft?  
-1 = CR  
-2 = PR
+**birth***    
+Geburtsjahr
 
-**height**  
-Größe in cm   
+**position**  
+jetzige Position, z.B. Staatssekretär:in, Minister
 
-**weight**  
-Gewicht in kg  
+** education **  
+höchster Bildungsabschluss 
 
-**age_real**   
-Alter in natürlichen Zahlen.  
+**subject**   
+Fachrichtung bei Studium/Promotion
 
-**age**   
-Bitte geben Sie Ihr Alter an:  
-1 = bis 20 Jahre    
-2 = 21 bis 22 Jahre    
-3 = 23 bis 24 Jahre  
-4 = 25 und älter  
+**party**   
+Parteizugehörigkeit
 
-**smoke**    
-Rauchen Sie mindestens ein Mal pro Woche?  
-1 = nein   
-2 = ja  
+**religion**    
+Religion
   
-**tatoo**    
-Tatoo vorhanden?   
-1 = nein  
-2 = ja  
+**kids**    
+Anzahl der Kinder
 
-**phone**  
-1 = android  
-2 = iOS/iphone  
+**twitter**  
+1= bis 5.000
+2= 5.000-10.000
+3= 10.000-15.000
+4= über 15.000
   
-**eyes**    
-Welche Augenfarbe?    
-1 = grün,   
-2 = blau,   
-3 = braun,   
-4 = blau.     
+**facebook**    
+1= bis 2.000
+2= 2.000-4.000
+3= 4.000-6.000
+4= über 6.000
 
-**hair**  
-Welche Haarfarbe?  
-1 = braun,      
-2 = schwarz,   
-3 = blond,    
-4 = rot.    
+**instagramm**  
+1= bis 2.000
+2= 2.000-4.000
+3= 4.000-6.000
+4= über 6.000
 
-**location** 
-Wohnort, als string/characters codiert  
 
-**county**  
-Bundesland, als string/characters codiert  
+**youtube** 
+1= bis 50
+2= 50-100
+3= über 100
 
 
 ##
