@@ -1,5 +1,5 @@
-# Datensatz Semesterverbund CRPR2 #
-Codebuch Stand 2021-05, aktualisiert 2021-10
+# Datensatz Spaetzle Connection Regierung Scholz #
+Codebuch Stand 2022-02
 erstellt von Swaran Sandhu (sandhu@hdm-stuttgart.de)
 
 ## Inhalt
@@ -8,59 +8,50 @@ erstellt von Swaran Sandhu (sandhu@hdm-stuttgart.de)
 - Codebuch.md (Codierung der Datensätze)
 
 ## Ursprung und Datenerhebung
-Ich habe den Datensatz unter den Studierenden des dritten Semesters im Kurs Netzwerkanalyse erhoben. Die Daten sind nach der Erhebung nach einem Zufallsprinzip anonymisiert worden.
-
-Das Netzwerk ist ein *gerichtetes one-mode Akteursnetzwerk*. Es wurden zwei getrennte Fragen erhoben:
-
-**Projektarbeitsnetzwerk work**  
-1a) Bei Hochschulprojekten arbeite ich am liebsten mit folgender Person aus meinem Semester: Bitte tragen Sie das Kürzel der Person ein.  
-1b) Bei Hochschulprojekten arbeite ich am auch gerne mit folgender Person aus meinem Semester: Bitte tragen Sie das Kürzel der zweiten Person ein.  
-  
-Für das Zusammenarbeitsnetzwerk *work* wurde der Person, die zuerst genannt wurde, ein Gewicht von 3 vergeben, die zweite Person erhielt ein Gewicht von 1. Insgesamt waren 76 Beziehungsmuster möglich.  
-
-**Unterstützungsnetzwerk help**  
-2a) Wenn Sie ein Problem oder eine studiengangsbezogene Frage haben, an welchen ihrer Mitstudenten aus ihrem Semester wenden Sie sich zuerst?  Bitte tragen Sie auch hier wieder das Kürzel ein.  
-2b) Wenn Sie ein Problem oder eine studiengangsbezogene Frage haben, an welchen ihrer Mitstudenten aus ihrem Semester wenden Sie sich als nächstes? Bitte tragen Sie auch hier wieder das Kürzel ein.
-  
-Für das Unterstützungsnetzwerk *help* wurde der Person, die zuerst genannt wurde, ein Gewicht von 3 vergeben, die zweite Person erhielt ein Gewicht von 1. Insgesamt waren 76 Beziehungsmuster möglich.
-  
-**Beziehungsnetzwerk love**
-Das Edge-Attribut *complicated* beschreibt drei unterschiedliche Beziehungsmuster innerhalb der Gruppe. Diese Kriterien haben kein eigenes Gewicht, sondern sind über die Art der Beziehung definiert (reziproke Paarbeziehung, tinder-Aktivität, einseitige Beziehung).
-
 
 # EDGE-Attribute
 
-**id**  
-(eindeutige Codierung des Knoten)   
-codiert von 1 bis 38, jede ID entspricht einem Studenten
+**from**  
 
-**weight**  
-Beziehungsstärke aufgrund der Nennung in den Fragen)  
-3 = sehr starke Beziehung (erste Nennung),   
-1 = starke Beziehung vorhanden (zweite Nennung)
+**to**  
 
-**relation**
-Beziehungsart zwischen den Personen  
-1 = *work* Projektbasierte Beziehung: Bei einem gerichteten Netzwerk präferiert der Sender (erste Spalte) die Zusammenarbeit mit der genannten Zielperson (zweite Spalte).  
-2 = *help* Unterstützungsbeziehung: Bei einem gerichteten Netzwerk fragt der Sender (erste Spalte) die genannte Person (zweite Spalte) um Rat.  
-3 = *love* Liebesbeziehung zwischen Akteuren, codiert nach dem Attribut *complicated*
+**relationship**
+(1) Ministerium (auch angegliedert als Staatsekretär:in)
+(2) politische Funktionen
+(3) Ehrenamt
+(4) Unternehmen und Aufsichtsräte
+(5) Stipendien
+(6) Berufstätigkeiten
+(7) Studienort in In- und Ausland
 
-**complicated**  
-1 = Beziehung (typische Paarbeziehung, d.h. reziprok zwischen beiden PartnerInnen),      
-2 = Tinder-Like (hat die person rechts geswiped, muss aber nicht gegenseitig sein)     
-3 = Crush (einseitig verliebt, ohne dass die Person etwas davon weiss).  
-
+**year**  
+Bezieht sich auf das Jahr, in dem die Variable relationship beginnt
 
 # NODE-Attribute  
-  
+
+-   name_short (Nachname)
+-   name (voller Name)
+-   type (0 = Person, 1 = Organisation/Ort/Verband etc.),
+-   sex (Geschlecht)
+-   birth (Geburtsjahr)
+-   position (jetzige Position, z.B. Staatssekretär:in, Minister)
+-   education (höchster Bildungsabschluss)
+-   subject (Fachrichtung bei Studium/Promotion)
+-   party (Parteizugehörigkeit)
+-   religion (Religion)
+-   kids (Anzahl der Kinder)
+-   twitter (Anzahl follower)
+-   instagram (Anzahl follower)
+-   facebook (Anzahl follower)
+-   youtube (Anzahl Abonnenten)
+
 **id**  
-Identische ID wie aus der edgelist zur Identifikation der Knoten. In diesem Fall sind alle personenbezogenen Daten anonymisiert von 1 bis 38.
+Identische ID wie aus der edgelist zur eindeutige Identifikation der Knoten
 
-**name**
-numerische ID
+**name_short**
+kürzere Bezeichnung der Organisation, Beruf oder Nachname
 
-**name_first**
-Vorname abgekürzt, z.B. für Visualiserung, falls der Name zu lange ist
+**type**
 
 **sex**    
 Bitte geben Sie ihr Geschlecht an:  
