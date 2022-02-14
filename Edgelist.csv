@@ -1,16 +1,4 @@
 from id,to id,relationship,year
-mat,sb,6,1990
-mat,lvfdp,2,1991
-mat,ltbw,2,2001
-mat,fdpbv,2,2003
-mat,dhbw,3,2004
-mat,rms,3,2004
-mat,ths,3,2004
-mat,wds,3,2004
-mat,fdpdvp,2,2006
-mat,eup,2,2009
-mat,konaush,2,2011
-mat,fdpbt,2,2017
 rss,aluni,7,1983
 rss,uniz,7,1983
 rss,asfkw,2,1999
