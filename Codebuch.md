@@ -1,6 +1,6 @@
 # Datensatz Spaetzle Connection Regierung Scholz #
 Codebuch Stand 2022-02
-erstellt von Swaran Sandhu (sandhu@hdm-stuttgart.de)
+erstellt von Sarah Liebers
 
 ## Inhalt
 - Edges.csv (Edgelist)
