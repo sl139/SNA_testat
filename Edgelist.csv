@@ -1,30 +1,4 @@
 from id,to id,relationship,year
-ft,unir,7,2000
-ft,fried,5,2001
-ft,cam,7,2002
-ft,fdps,2,2003
-ft,jlbw,2,2003
-ft,unih,7,2003
-ft,fmg,2,2005
-ft,aush,2,2009
-ft,klb,2,2009
-ft,fdpbw,2,2011
-ft,lfafdp,2,2011
-ft,ekuni,7,2012
-ft,fresh,6,2014
-ft,aerat,2,2017
-ft,ausin,2,2017
-ft,ausw,2,2017
-ft,ausf ,2,2017
-ft,gemaus,2,2017
-ft,vmaus,2,2017
-ft,waus,2,2017
-ft,ass,4,2018
-ft,kfw,3,2019
-ft,rwaus,2,2020
-ft,bmj,1,2021
-ft,gsev,3,
-ft,stvev,3,
 jb,unim,7,2005
 jb,jlbw,2,2010
 jb,ausbil,2,2017
