@@ -1,16 +1,4 @@
 from id,to id,relationship,year
-jb,unim,7,2005
-jb,jlbw,2,2010
-jb,ausbil,2,2017
-jb,ausfam,2,2017
-jb,ds,3,2017
-jb,bb,2,2017
-jb,vphev,3,2017
-jb,yecev,3,2017
-jb,bsmag,3,2018
-jb,das,3,2019
-jb,bmbf,1,2021
-jb,bcg,6,
 mat,sb,6,1990
 mat,lvfdp,2,1991
 mat,ltbw,2,2001
